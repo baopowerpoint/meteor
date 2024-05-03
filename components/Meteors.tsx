@@ -12,7 +12,7 @@ export const Meteors = ({
 }) => {
   const windowSize = useWindowSize();
   console.log(windowSize);
-  const currentwidth = windowSize.width ? windowSize.width : window.innerWidth;
+  const currentwidth = windowSize.width ? windowSize.width : window?.innerWidth;
   const meteors = new Array(number || 10).fill(true);
   return (
     <div className="w-full">

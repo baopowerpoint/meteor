@@ -1,5 +1,5 @@
+"use client";
 import { Meteors } from "@/components/Meteors";
-import Image from "next/image";
 
 export default function Home() {
   return (
