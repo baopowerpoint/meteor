@@ -29,7 +29,7 @@ export const Meteors = ({
           style={{
             top: 0 + currentwidth * Math.random(),
             left: Math.floor(Math.random() * currentwidth! + -600) + "px",
-            animationDelay: Math.random() * (1 - 0.1) + 0.1 + "s",
+            animationDelay: Math.random() * (1 - 0.5) + 0.1 + "s",
             animationDuration:
               Math.floor(Math.random() * (10 - 2) * 0.3 + 4) + "s",
           }}
