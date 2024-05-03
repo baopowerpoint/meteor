@@ -8,10 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(200deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(200deg) translateX(-1000px)",
+            opacity: "0",
+          },
+        },
+      },
+      animation: {
+        meteor: "meteor 1s ease-out infinite",
       },
     },
   },
