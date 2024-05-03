@@ -23,7 +23,7 @@ export const Meteors = ({
           key={"meteor" + index}
           className={cn(
             "animate-meteor absolute top-1/2 left-1/2 h-1 w-1 rounded-full bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[200deg]",
-            "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[40%] before:w-[100px] before:h-[2px] before:bg-gradient-to-r before:from-[#d5dde9] before:to-transparent",
+            "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[40%] before:w-[100px] before:h-[2px] before:bg-gradient-to-r before:from-[#6b81a1] before:to-transparent",
             className
           )}
           style={{
@@ -31,8 +31,7 @@ export const Meteors = ({
             left: Math.floor(Math.random() * currentwidth! + -400) + "px",
             animationDelay: Math.random() * (1 - 0.3) + 0.1 + "s",
             animationDuration:
-              Math.floor(Math.random() * (10 - 2) * 0.1 + 1 + index * 0.1) +
-              "s",
+              Math.floor(Math.random() * (10 - 2) * 0.1 + 1) + "s",
           }}
         ></span>
       ))}
