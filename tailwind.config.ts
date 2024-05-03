@@ -19,7 +19,7 @@ const config: Config = {
         },
       },
       animation: {
-        meteor: "meteor 3s ease-out infinite",
+        meteor: "meteor 0.2s ease-out infinite",
       },
     },
   },
